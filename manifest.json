@@ -1,0 +1,16 @@
+{
+  "short_name": "PDF Studio",
+  "name": "PDF Studio - Free In-Browser PDF Editor",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#020617",
+  "theme_color": "#0f172a",
+  "display": "standalone",
+  "description": "Free, 100% offline-first client-side PDF editor and image converter."
+}

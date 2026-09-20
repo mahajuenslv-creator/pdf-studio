@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>PDF Studio — Free In-Browser PDF Editor</title>
+    <meta name="description" content="Free, privacy-first in-browser PDF editor. Delete pages, extract text & Markdown, add text & images, and export pages to PNG/JPG/ZIP." />
+    <meta name="theme-color" content="#0f172a" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' blob: data:; script-src 'self' 'wasm-unsafe-eval' 'unsafe-inline'; worker-src 'self' blob:; connect-src 'self' https://cdn.jsdelivr.net https://huggingface.co https://*.huggingface.co https://*.jsdelivr.net https://unpkg.com; object-src 'none'; base-uri 'self'; font-src 'self' data: https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;"
+    />
+    <link rel="manifest" href="/pdf-studio/manifest.json" />
+
+    <!-- Open Graph / Social Cards -->
+    <meta property="og:title" content="PDF Studio — Free In-Browser PDF Editor" />
+    <meta property="og:description" content="Free, 100% offline-first in-browser PDF editor. Edit PDFs, reorder/delete pages, read Markdown & OCR, and convert pages to high-res PNG/JPG images locally." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PDF Studio — Free In-Browser PDF Editor" />
+    <meta name="twitter:description" content="100% Client-Side PDF Editor. No file uploads. Edit, split, OCR & convert PDFs." />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "PDF Studio",
+        "operatingSystem": "All",
+        "applicationCategory": "UtilitiesApplication",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Free 100% client-side in-browser PDF editor, page manager, OCR & Markdown tool, and image converter."
+      }
+    </script>
+    <script type="module" crossorigin src="/pdf-studio/assets/index-CYEO9u8W.js"></script>
+    <link rel="stylesheet" crossorigin href="/pdf-studio/assets/index-D2yXgm00.css">
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator && location.protocol === 'https:') {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js').catch((err) => {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
