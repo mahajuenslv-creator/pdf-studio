@@ -6,6 +6,18 @@
     <title>PDF Studio — Free In-Browser PDF Editor</title>
     <meta name="description" content="Free, privacy-first in-browser PDF editor. Delete pages, extract text & Markdown, add text & images, and export pages to PNG/JPG/ZIP." />
     <meta name="theme-color" content="#0f172a" />
+    <!--
+      Content-Security-Policy: strict by default (no third parties beyond the
+      local OCR/model CDNs). The PDF you open never leaves the browser.
+
+      TO ENABLE ADS (see src/adConfig.ts): Google AdSense is third-party and needs
+      its domains allow-listed. Add these to the directives below when you turn ads on:
+        script-src  … https://pagead2.googlesyndication.com https://adservice.google.com https://partner.googleadservices.com https://tpc.googlesyndication.com
+        frame-src   https://googleads.g.doubleclick.net https://tpc.googlesyndication.com
+        img-src     … https://pagead2.googlesyndication.com https://*.g.doubleclick.net
+        connect-src … https://pagead2.googlesyndication.com https://*.g.doubleclick.net https://*.google.com
+      (AdSense does not fully support strict CSP; you may need to adjust further.)
+    -->
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; img-src 'self' blob: data:; script-src 'self' 'wasm-unsafe-eval' 'unsafe-inline'; worker-src 'self' blob:; connect-src 'self' https://cdn.jsdelivr.net https://huggingface.co https://*.huggingface.co https://*.jsdelivr.net https://unpkg.com; object-src 'none'; base-uri 'self'; font-src 'self' data: https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;"
@@ -36,8 +48,8 @@
         "description": "Free 100% client-side in-browser PDF editor, page manager, OCR & Markdown tool, and image converter."
       }
     </script>
-    <script type="module" crossorigin src="/pdf-studio/assets/index-CVWhKCmQ.js"></script>
-    <link rel="stylesheet" crossorigin href="/pdf-studio/assets/index-DpUFYXlU.css">
+    <script type="module" crossorigin src="/pdf-studio/assets/index-miyOSg6w.js"></script>
+    <link rel="stylesheet" crossorigin href="/pdf-studio/assets/index-DwQhQs64.css">
   </head>
   <body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
     <div id="root"></div>

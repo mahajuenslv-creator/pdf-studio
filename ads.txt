@@ -1,2 +1,8 @@
-# ads.txt placeholder for PDF Studio
+# ads.txt for PDF Studio
+# Authorizes the ad networks allowed to sell this site's inventory.
+#
+# TO ENABLE ADS: replace pub-0000000000000000 below with your own AdSense
+# publisher ID (the digits after "ca-" in your ca-pub-... client ID), then
+# uncomment the line. See src/adConfig.ts for the full setup steps.
+#
 # google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
