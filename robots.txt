@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://pdfstudio.app/sitemap.xml
+
+Sitemap: https://mahajuenslv-creator.github.io/pdf-studio/sitemap.xml
